@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Helping Hands</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Helping Hands</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="signup.html" class="btn-signup">Sign Up</a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Browse our complete range of professional services</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid-large">
+                <!-- Plumbing -->
+                <div class="service-card" onclick="window.location.href='plumbing-details.html'" style="cursor: pointer;">
+                    <img src="https://wallpapers.com/images/hd/plumber-fixing-plumbing-system-with-wrench-pr81z8nhgjaxt833.jpg" alt="Plumbing" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Plumbing</h3>
+                    <p>Professional plumbing repairs and installations</p>
+                    <div class="rating" style="color: #ffc107; margin: 10px 0;">⭐ 4.9/5 (2847 reviews)</div>
+                    <span class="service-price">From ₹499</span>
+                </div>
+
+                <!-- Electrical -->
+                <div class="service-card" onclick="window.location.href='electrical-details.html'" style="cursor: pointer;">
+                    <img src="https://cdn.pixabay.com/photo/2024/07/11/22/49/man-8889170_1280.jpg" alt="Electrical" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Electrical</h3>
+                    <p>Electrical installations and repair services</p>
+                    <div class="rating" style="color: #ffc107; margin: 10px 0;">⭐ 4.8/5 (3102 reviews)</div>
+                    <span class="service-price">From ₹599</span>
+                </div>
+
+                <!-- Cleaning -->
+                <div class="service-card" onclick="window.location.href='cleaning-details.html'" style="cursor: pointer;">
+                    <img src="https://img.freepik.com/premium-photo/smiling-indian-male-cleaner-office-uniform-cleaning-floor_1273271-5653.jpg" alt="Cleaning" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Cleaning</h3>
+                    <p>Deep cleaning and regular house cleaning</p>
+                    <div class="rating" style="color: #ffc107; margin: 10px 0;">⭐ 4.7/5 (4521 reviews)</div>
+                    <span class="service-price">From ₹399</span>
+                </div>
+
+                <!-- Carpentry -->
+                <div class="service-card" onclick="window.location.href='carpentry-details.html'" style="cursor: pointer;">
+                    <img src="https://fthmb.tqn.com/E2Alk9D2H096z9PyHLLvmZjY1gg=/2121x1414/filters:fill(auto,1)/GettyImages-508481761-5760b7105f9b58f22e360f07.jpg" alt="Carpentry" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Carpentry</h3>
+                    <p>Furniture repair and carpentry work</p>
+                    <div class="rating" style="color: #ffc107; margin: 10px 0;">⭐ 4.9/5 (1923 reviews)</div>
+                    <span class="service-price">From ₹699</span>
+                </div>
+
+                <!-- Painting -->
+                <div class="service-card" onclick="window.location.href='painting-details.html'" style="cursor: pointer;">
+                    <img src="https://th.bing.com/th/id/R.bb3215a887dc847a3fec3b0406b2fc25?rik=AYnXF3b6A83lag&riu=http%3a%2f%2fwww.mediumspot.com%2fwp-content%2fuploads%2f2020%2f06%2fHouse-Painter11-880x528.jpg&ehk=mdXDDCQFMyp7UA2j9Fo5byDU%2brF6INjD%2boMdxm%2b8%2fLU%3d&risl=&pid=ImgRaw&r=0" alt="Painting" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Painting</h3>
+                    <p>Interior and exterior painting services</p>
+                    <div class="rating" style="color: #ffc107; margin: 10px 0;">⭐ 4.8/5 (2341 reviews)</div>
+                    <span class="service-price">From ₹549</span>
+                </div>
+
+                <!-- Appliance Repair -->
+                <div class="service-card" onclick="window.location.href='appliance-details.html'" style="cursor: pointer;">
+                    <img src="https://koala.sh/api/image/v2-96gzk-1vb1u.jpg?width=1216&height=832&dream" alt="Appliance Repair" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Appliance Repair</h3>
+                    <p>AC, washing machine, and appliance repair</p>
+                    <div class="rating" style="color: #ffc107; margin: 10px 0;">⭐ 4.9/5 (2756 reviews)</div>
+                    <span class="service-price">From ₹799</span>
+                </div>
+
+                <!-- Driving -->
+                <div class="service-card" onclick="window.location.href='driving-details.html'" style="cursor: pointer;">
+                    <img src="https://www.rajasthantourdriver.com/wp-content/uploads/2023/07/indiacar.jpg" alt="Driving" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Driving</h3>
+                    <p>Professional driving services</p>
+                    <div class="rating" style="color: #ffc107; margin: 10px 0;">⭐ 4.8/5 (3845 reviews)</div>
+                    <span class="service-price">From ₹299</span>
+                </div>
+
+                <!-- Pest Control -->
+                <div class="service-card" onclick="window.location.href='pest-control-details.html'" style="cursor: pointer;">
+                    <img src="images\pestControl.webp" alt="Pest Control" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
+                    <h3>Pest Control</h3>
+                    <p>Safe and effective pest control</p>
+                    <div class="rating" style="color: #ffc107; margin: 10px 0;">⭐ 4.7/5 (1674 reviews)</div>
+                    <span class="service-price">From ₹499</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Helping Hands</h4>
+                    <p>Trusted services at your doorstep. Making life easier, one service at a time.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+<div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#plumbing">Plumbing</a></li>
+                        <li><a href="#electrical">Electrical</a></li>
+                        <li><a href="#cleaning">Cleaning</a></li>
+                        <li><a href="#carpentry">Carpentry</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 9149261500</li>
+                        <li><i class="fas fa-envelope"></i> helpinghands@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Delhi,India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Helping Hands. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

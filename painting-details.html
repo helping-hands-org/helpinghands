@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting Services - Helping Hands</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar"><div class="container"><div class="nav-wrapper"><div class="logo"><i class="fas fa-hand-holding-heart"></i><span>Helping Hands</span></div><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul><div class="auth-buttons"><a href="login.html" class="btn-login">Login</a><a href="signup.html" class="btn-signup">Sign Up</a></div><div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div></div></div></nav>
+    <div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html">Login</a><a href="signup.html">Sign Up</a></div>
+
+    <section class="service-details">
+        <div class="container">
+            <a href="services.html" style="display: inline-block; margin-bottom: 20px; color: var(--primary-color); text-decoration: none; font-weight: 600;"><i class="fas fa-arrow-left"></i> Back</a>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                <div><img src="https://th.bing.com/th/id/R.bb3215a887dc847a3fec3b0406b2fc25?rik=AYnXF3b6A83lag&riu=http%3a%2f%2fwww.mediumspot.com%2fwp-content%2fuploads%2f2020%2f06%2fHouse-Painter11-880x528.jpg&ehk=mdXDDCQFMyp7UA2j9Fo5byDU%2brF6INjD%2boMdxm%2b8%2fLU%3d&risl=&pid=ImgRaw&r=0" alt="Painting" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"></div>
+                <div>
+                    <h1 style="color: var(--primary-color); margin-bottom: 15px;">Professional Painting Services</h1>
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="color: #ffc107; font-size: 18px;">⭐ 4.8/5 (2341 reviews)</div>
+                        <div style="background: var(--primary-color); color: white; padding: 5px 15px; border-radius: 20px; font-weight: 600;">Verified</div>
+                    </div>
+                    <p style="font-size: 16px; color: #666; line-height: 1.6; margin-bottom: 20px;">Professional painters transform your spaces with quality finishes. Interior and exterior painting with premium quality paints.</p>
+                    <div style="background: #f5f5f5; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px;">Price & Availability</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div><p style="color: #999; font-size: 14px;">Starting Price</p><p style="font-size: 24px; font-weight: 700; color: var(--primary-color);">₹549</p></div>
+                            <div><p style="color: #999; font-size: 14px;">Available</p><p style="font-size: 16px; font-weight: 600; color: #4CAF50;">Daily</p></div>
+                        </div>
+                    </div>
+                    <div style="display: grid; gap: 10px; margin-bottom: 20px;">
+                        <a href="booking.html" class="btn-primary" style="text-align: center; padding: 15px; text-decoration: none;">Book Now</a>
+                        <a href="contact.html" class="btn-secondary" style="text-align: center; padding: 15px; background: linear-gradient(135deg, var(--secondary-color), #45b7a8); border: none; color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 60px;">
+                <h2 style="color: var(--primary-color); margin-bottom: 30px; text-align: center;">Painting Services</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+                    <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--primary-color);"><h4 style="color: var(--primary-color); margin-bottom: 10px;">Interior Painting</h4><p style="color: #666; font-size: 14px;">Professional interior wall and ceiling painting</p></div>
+                    <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--primary-color);"><h4 style="color: var(--primary-color); margin-bottom: 10px;">Exterior Painting</h4><p style="color: #666; font-size: 14px;">Durable exterior painting with weather protection</p></div>
+                    <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--primary-color);"><h4 style="color: var(--primary-color); margin-bottom: 10px;">Wall Texturing</h4><p style="color: #666; font-size: 14px;">Creative wall texture finishes</p></div>
+                    <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--primary-color);"><h4 style="color: var(--primary-color); margin-bottom: 10px;">Color Consultation</h4><p style="color: #666; font-size: 14px;">Expert advice on color selection</p></div>
+                    <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--primary-color);"><h4 style="color: var(--primary-color); margin-bottom: 10px;">Surface Preparation</h4><p style="color: #666; font-size: 14px;">Professional surface preparation and priming</p></div>
+                    <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--primary-color);"><h4 style="color: var(--primary-color); margin-bottom: 10px;">Premium Finishes</h4><p style="color: #666; font-size: 14px;">High-quality paint with weather protection</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col"><h4>Helping Hands</h4><p>Trusted services at your doorstep.</p></div><div class="footer-col"><h4>Contact</h4><ul><li><i class="fas fa-phone"></i> +1 (555) 123-4567</li></ul></div></div><div class="footer-bottom"><p>&copy; 2024 Helping Hands.</p></div></div></footer>
+
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button>
+    <script src="js/main.js"></script>
+</body>
+</html>

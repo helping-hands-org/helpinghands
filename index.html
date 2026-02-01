@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping Hands - Trusted Services at Your Doorstep</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Helping Hands</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="signup.html" class="btn-signup">Sign Up</a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Trusted Services at Your Doorstep</h1>
+                <p class="hero-subtitle">Connect with skilled professionals for home services. Fast, reliable, and affordable.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="What service do you need?" id="serviceInput">
+                    <button class="btn-search" onclick="searchService()">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                <div class="quick-links">
+                    <a href="booking.html" class="quick-link">Book Now</a>
+                    <a href="services.html" class="quick-link">View All Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src= alt="Professional Services">
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Services -->
+    <section class="popular-services">
+        <div class="container">
+            <h2 class="section-title">Popular Services</h2>
+            <p class="section-subtitle">Choose from our most requested services</p>
+            
+            <div class="services-grid">
+                <div class="service-card" onclick="selectService('Plumbing')">
+                    <div class="card-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Plumbing</h3>
+                    <p>Repair leaks, pipes & fixtures</p>
+                    <span class="service-price">From ₹499</span>
+                </div>
+
+                <div class="service-card" onclick="selectService('Electrical')">
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electrical</h3>
+                    <p>Installation & repairs</p>
+                    <span class="service-price">From ₹599</span>
+                </div>
+
+                <div class="service-card" onclick="selectService('Cleaning')">
+                    <div class="card-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Cleaning</h3>
+                    <p>Deep cleaning services</p>
+                    <span class="service-price">From ₹399</span>
+                </div>
+
+                <div class="service-card" onclick="selectService('Carpentry')">
+                    <div class="card-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Carpentry</h3>
+                    <p>Furniture & repairs</p>
+                    <span class="service-price">From ₹699</span>
+                </div>
+
+                <div class="service-card" onclick="selectService('Painting')">
+                    <div class="card-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Painting</h3>
+                    <p>Interior & exterior painting</p>
+                    <span class="service-price">From ₹549</span>
+                </div>
+
+                <div class="service-card" onclick="selectService('Driving')">
+                    <div class="card-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Driving</h3>
+                    <p>Professional drivers</p>
+                    <span class="service-price">From ₹299</span>
+                </div>
+
+                <div class="service-card" onclick="selectService('Appliance Repair')">
+                    <div class="card-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Appliance Repair</h3>
+                    <p>AC, washing machine & more</p>
+                    <span class="service-price">From ₹799</span>
+                </div>
+
+                <div class="service-card" onclick="selectService('Pest Control')">
+                    <div class="card-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Pest Control</h3>
+                    <p>Safe pest management</p>
+                    <span class="service-price">From ₹499</span>
+                </div>
+            </div>
+
+            <div class="view-all-btn">
+                <a href="services.html" class="btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Helping Hands?</h2>
+            <p class="section-subtitle">Join thousands of happy customers</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Verified Professionals</h3>
+                    <p>All professionals are thoroughly screened and verified for your safety and trust.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Quick Booking</h3>
+                    <p>Book services in minutes. We connect you with the best available professional.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>100% secure transactions with buyer protection guarantee on every booking.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Quality Assured</h3>
+                    <p>Rated professionals with excellent customer reviews and ratings.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for all your queries and concerns.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with transparent costs. No hidden charges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h3 class="stat-number">50,000+</h3>
+                <p>Services Completed</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number">10,000+</h3>
+                <p>Active Professionals</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number">98%</h3>
+                <p>Customer Satisfaction</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number">4.8/5</h3>
+                <p>Average Rating</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Real reviews from real customers</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Amazing service! The plumber arrived on time and fixed everything perfectly. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                       
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best cleaning service I've used. Very professional and they were done in time. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <div>
+                            <h4>Rajesh Kumar</h4>
+                            <p>Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Electrical work was done safely and professionally. Great experience from booking to completion!"</p>
+                    <div class="testimonial-author">
+                    
+                        <div>
+                            <h4>Anjali Patel</h4>
+                            <p>Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Started?</h2>
+                <p>Book your first service now and save 20% with your first booking!</p>
+                <a href="booking.html" class="btn-primary btn-lg">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Helping Hands</h4>
+                    <p>Trusted services at your doorstep. Making life easier, one service at a time.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#plumbing">Plumbing</a></li>
+                        <li><a href="services.html#electrical">Electrical</a></li>
+                        <li><a href="services.html#cleaning">Cleaning</a></li>
+                        <li><a href="services.html#carpentry">Carpentry</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 9149261500</li>
+                        <li><i class="fas fa-envelope"></i> support@helpinghands.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Delhi , India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Helping Hands. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

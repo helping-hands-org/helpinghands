@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Test - Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <span>Helping Hands</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="signup.html" class="btn-signup">Sign Up</a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services - Test Version</h1>
+            <p>Quick test to verify services are loading</p>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div id="testResults" style="background: #f0f0f0; padding: 20px; border-radius: 10px; margin-bottom: 30px;">
+                <h3>Debug Information:</h3>
+                <p id="debugInfo"></p>
+            </div>
+            
+            <div class="services-grid-large" id="servicesContainer">
+                <p style="text-align: center; color: #999;">Services will appear here...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Helping Hands. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Test script
+        window.addEventListener('DOMContentLoaded', function() {
+            const debugInfo = document.getElementById('debugInfo');
+            const container = document.getElementById('servicesContainer');
+            
+            let info = '<strong>Checking data...</strong><br>';
+            
+            // Check if servicesData exists
+            if (typeof servicesData !== 'undefined') {
+                info += `✅ servicesData found<br>`;
+                info += `✅ Number of services: ${servicesData.length}<br>`;
+                
+                if (servicesData.length > 0) {
+                    info += `✅ First service: ${servicesData[0].name}<br>`;
+                }
+            } else {
+                info += `❌ servicesData NOT found<br>`;
+            }
+            
+            // Check if container exists
+            if (container) {
+                info += `✅ servicesContainer found<br>`;
+            } else {
+                info += `❌ servicesContainer NOT found<br>`;
+            }
+            
+            // Check if populateServices exists
+            if (typeof populateServices === 'function') {
+                info += `✅ populateServices function exists<br>`;
+                info += `<strong style="color: green;">Calling populateServices()...</strong><br>`;
+                
+                try {
+                    populateServices();
+                    info += `✅ populateServices() executed successfully<br>`;
+                    info += `✅ Rendered ${container.children.length} service cards<br>`;
+                } catch (e) {
+                    info += `❌ Error: ${e.message}<br>`;
+                }
+            } else {
+                info += `❌ populateServices function NOT found<br>`;
+            }
+            
+            debugInfo.innerHTML = info;
+        });
+    </script>
+</body>
+</html>
