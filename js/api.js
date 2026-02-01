@@ -180,7 +180,7 @@ async function handleBooking(event) {
     if (hasErrors) return;
     
     try {
-        const response = await fetch(`${API_BASE_URL}/booking`, {
+        const response = await fetch(`${API_BASE_URL}/api/booking`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
