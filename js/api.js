@@ -6,7 +6,7 @@
 
 /// js/api.js
 
-const API_BASE_URL = "http://192.168.1.6:3000";
+const API_BASE_URL = "http://10.18.3.8:10000";
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("signupForm");
