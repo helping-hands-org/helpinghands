@@ -6,7 +6,7 @@
 
 /// js/api.js
 
-const API_BASE_URL = "http://10.18.3.8:10000";
+const API_BASE_URL = "https://helpinghands-7x93.onrender.com";
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("signupForm");
