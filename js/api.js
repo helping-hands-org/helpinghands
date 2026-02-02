@@ -254,5 +254,6 @@ function checkUserLogin() {
 // Logout function
 function logout() {
     localStorage.removeItem('currentUser');
-    window.location.href = 'index.html';
+    window.location.href = 'dashboard.html';
 }
+
