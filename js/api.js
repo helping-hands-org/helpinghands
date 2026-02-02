@@ -100,7 +100,7 @@ async function handleLogin(event) {
             localStorage.setItem('currentUser', JSON.stringify(data.user));
             showSuccessMessage('Login successful! Redirecting...');
             setTimeout(() => {
-                window.location.href = 'index.html';
+                window.location.href = 'dashboard.html';
             }, 2000);
         } else {
             showError('passwordError', data.message);
@@ -254,6 +254,6 @@ function checkUserLogin() {
 // Logout function
 function logout() {
     localStorage.removeItem('currentUser');
-    window.location.href = 'dashboard.html';
+    window.location.href = 'index.html';
 }
 
