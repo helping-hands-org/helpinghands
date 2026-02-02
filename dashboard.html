@@ -125,6 +125,14 @@
 </head>
 <body>
 
+  <!-- Check login -->
+  <script>
+    const user = localStorage.getItem('currentUser');
+    if (!user) {
+      window.location.href = 'login.html';
+    }
+  </script>
+
   <header>
     <h1>Helping Hands Dashboard</h1>
     <button onclick="logout()">Logout</button>
@@ -133,7 +141,7 @@
   <div class="container">
 
     <div class="welcome">
-      <h2>Welcome, User 👋</h2>
+      <h2 id="welcomeMessage">Welcome, User 👋</h2>
       <p style="color: var(--muted)">Here’s an overview of your services</p>
     </div>
 
@@ -183,8 +191,8 @@
 
     <div class="section">
       <h3>Profile</h3>
-      <p><strong>Name:</strong> Demo User</p>
-      <p><strong>Email:</strong> user@email.com</p>
+      <p><strong>Name:</strong> <span id="profileName"></span></p>
+      <p><strong>Email:</strong> <span id="profileEmail"></span></p>
     </div>
 
   </div>
@@ -194,8 +202,18 @@
   </footer>
 
   <script>
+    // Display logged-in user data
+    const userData = JSON.parse(localStorage.getItem('currentUser'));
+    if (userData) {
+      document.getElementById('welcomeMessage').innerText = `Welcome, ${userData.fullName} 👋`;
+      document.getElementById('profileName').innerText = userData.fullName;
+      document.getElementById('profileEmail').innerText = userData.email;
+    }
+
+    // Logout function
     function logout() {
-      localStorage.removeItem('token');
+      localStorage.removeItem('currentUser');
+      localStorage.removeItem('isLoggedIn');
       window.location.href = 'login.html';
     }
   </script>

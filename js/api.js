@@ -100,7 +100,7 @@ async function handleLogin(event) {
             localStorage.setItem('currentUser', JSON.stringify(data.user));
             showSuccessMessage('Login successful! Redirecting...');
             setTimeout(() => {
-                window.location.href = 'dashboard.html';
+                window.location.href = "dashboard.html";
             }, 2000);
         } else {
             showError('passwordError', data.message);
