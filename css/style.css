@@ -17,16 +17,16 @@ html, body {
 }
 
 :root {
-    --primary-color: #FF5252;
-    --secondary-color: #00BCD4;
+    --primary-color: #fc6471fb;
+    --secondary-color: #b7ecf3;
     --accent-color: #FFD740;
     --dark-bg: #1a1a1a;
-    --light-bg: #f8f9fa;
-    --text-dark: #333333;
+    --light-bg: #8fc4f8;
+    --text-dark: #413d3d;
     --text-light: #666666;
     --border-color: #e0e0e0;
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+    --shadow: 0 10px 30px rgba(173, 9, 9, 0.1);
+    --transition: all 0.10s ease;
 }
 
 * {
