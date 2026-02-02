@@ -55,15 +55,7 @@
                     <p>Login to your Helping Hands account</p>
                 </div>
                 
-                <form onsubmit="loginUser(event)">
-  <input id="email" type="email" required />
-  <input id="password" type="password" required />
-  <button type="submit">Login</button>
-</form>
-
-<script src="api.js"></script>
-<script src="login.js"></script>
-
+                <form id="loginForm" onsubmit="handleLogin(event)">
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <div class="input-wrapper">
