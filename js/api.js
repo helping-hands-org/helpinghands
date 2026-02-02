@@ -205,7 +205,7 @@ async function handleBooking(event) {
         if (data.success) {
             showSuccessMessage(`Booking confirmed! Booking ID: ${data.bookingId}. Redirecting...`);
             setTimeout(() => {
-                window.location.href = 'index.html';
+                window.location.href = 'dashboard.html';
             }, 3000);
         } else {
             showError('addressError', data.message);
