@@ -279,10 +279,10 @@ body.dark-mode .mobile-menu a {
    =========================== */
 
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3f4042 0%, #d5bcee 100%);
     color: white;
     padding: 80px 0;
-    min-height: 600px;
+    min-height: 500px;
     display: flex;
     align-items: center;
     overflow: hidden;
