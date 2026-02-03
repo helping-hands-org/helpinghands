@@ -413,7 +413,7 @@ body.dark-mode .section-title {
 
 .popular-services {
     padding: 100px 0;
-    background: var(--light-bg);
+    background: transparent;
 }
 
 body.dark-mode .popular-services {
