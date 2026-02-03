@@ -18,7 +18,7 @@ html, body {
 
 :root {
     --primary-color: #fc6471fb;
-    --secondary-color: #b7ecf3;
+    --secondary-color: #ffffff;
     --accent-color: #FFD740;
     --dark-bg: #1a1a1a;
     --light-bg: #8fc4f8;
@@ -121,7 +121,7 @@ a {
 
 .btn-search {
     background: var(--secondary-color);
-    color: white;
+    color: rgb(153, 91, 91);
     padding: 14px 30px;
     border: none;
     border-radius: 8px;
@@ -131,7 +131,7 @@ a {
 }
 
 .btn-search:hover {
-    background: #3ba39c;
+    background: #726d7c;
     transform: translateY(-2px);
 }
 
@@ -279,7 +279,7 @@ body.dark-mode .mobile-menu a {
    =========================== */
 
 .hero {
-    background: linear-gradient(135deg, #3f4042 0%, #d5bcee 100%);
+    background: linear-gradient(135deg, hsl(300, 7%, 27%) 0%, #8416f1 100%);
     color: white;
     padding: 80px 0;
     min-height: 500px;
@@ -325,7 +325,7 @@ body.dark-mode .mobile-menu a {
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
-    background: white;
+    background: rgb(247, 248, 233);
     border-radius: 50px;
     padding: 8px;
 }
@@ -341,7 +341,7 @@ body.dark-mode .mobile-menu a {
 }
 
 .search-bar input::placeholder {
-    color: #999;
+    color: #080505;
 }
 
 .quick-links {
@@ -372,11 +372,11 @@ body.dark-mode .mobile-menu a {
 }
 
 .hero-image img {
-    max-width: 100%;
+    max-width: 110%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-    animation: float 3s ease-in-out infinite;
+    animation: float  ease-in-out infinite;
 }
 
 @keyframes float {
