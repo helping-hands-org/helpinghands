@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<nav class="dash-nav">
+  <h2>Helping Hands</h2>
+  <button onclick="logout()">Logout</button>
+</nav>
+
+<section class="dashboard">
+
+  <!-- Profile -->
+  <div class="card">
+    <h3>My Profile</h3>
+    <p><b>Name:</b> <span id="uName"></span></p>
+    <p><b>Email:</b> <span id="uEmail"></span></p>
+  </div>
+
+  <!-- Bookings -->
+  <div class="card">
+    <h3>My Bookings</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="bookingList"></tbody>
+    </table>
+  </div>
+
+</section>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
+

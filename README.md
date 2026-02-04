@@ -262,7 +262,7 @@ Feel free to fork this project and submit pull requests for any improvements.
 
 ## 📧 Support
 
-For questions or issues, please open an issue on GitHub or contact us at support@helpinghands.com
+For questions or issues, please open an issue on GitHub or contact us at ankitkatiyar013@gmail.com
 
 ## 🙏 Credits
 

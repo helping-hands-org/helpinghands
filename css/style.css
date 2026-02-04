@@ -2058,3 +2058,11 @@ body.dark-mode .footer {
 .whatsapp-float:hover {
     background-color: #1ebe5d;
 }
+
+/* ================= DASHBOARD ================= */
+.dashboard {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
